@@ -2,7 +2,9 @@
 " = Yi's VIM configuration =
 " ==========================
 
-
+" This is the personal vim configuration
+" modified from Steve Francia's ultimate .vimrc configuration
+" The theme I chose requires 256 color support
 
 " Environment Setups
 set nocompatible
@@ -17,7 +19,6 @@ silent! call pat`hogen#runtime_append_all_bundles()
 " ----------------
 
 	set background=dark			" Assume a dark background
-	"set term=builtin_ansi		" Make arrow and other keys work
 	set term=xterm
 	filetype plugin indent on	" Automatically detect file types
 	set t_Co=256 				" Enable 256 colors
@@ -96,6 +97,7 @@ silent! call pat`hogen#runtime_append_all_bundles()
 " ------------
 	set nowrap				" wrap long lines
 	set autoindent			" indent at the same level of the previous line
+	set smartindent
 	set shiftwidth=4		" use indents of 4 spaces
 	set noexpandtab			" tabs are tabs, not spaces
 	set tabstop=4			" an indentation every four columns
