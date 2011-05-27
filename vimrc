@@ -47,7 +47,7 @@ silent! call pat`hogen#runtime_append_all_bundles()
 " ------------
 "    Vim UI
 " ------------
-	colorscheme inkpot		" Select the desired colorscheme
+	colorscheme wombat		" Select the desired colorscheme
 	set tabpagemax=15		" only show 15 tabs
 	set showmode			" display the current mode
 
@@ -87,9 +87,9 @@ silent! call pat`hogen#runtime_append_all_bundles()
 " -------------------------------
 "  MacVim specific look and feel
 " -------------------------------
-	set guifont=TerminusBold:h16	" Set the display font
-	set noantialias					" Disable the anti-aliasing rendering
-
+	"set guifont=TerminusBold:h16	" Set the display font
+	"set noantialias					" Disable the anti-aliasing rendering
+	set guifont=Consolas:h16
 
 
 " ------------
