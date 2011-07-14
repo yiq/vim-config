@@ -47,7 +47,7 @@ silent! call pat`hogen#runtime_append_all_bundles()
 " ------------
 "    Vim UI
 " ------------
-	colorscheme wombat		" Select the desired colorscheme
+	colorscheme solarized	" Select the desired colorscheme
 	set tabpagemax=15		" only show 15 tabs
 	set showmode			" display the current mode
 
