@@ -18,11 +18,11 @@ silent! call pat`hogen#runtime_append_all_bundles()
 " General Settings
 " ----------------
 
+	syntax on					" Turn on syntax highlighting
 	set background=dark			" Assume a dark background
 	set term=xterm
 	filetype plugin indent on	" Automatically detect file types
 	set t_Co=256 				" Enable 256 colors
-	syntax on					" Turn on syntax highlighting
 	set mouse=a					" Enable xterm mouse support
 	scriptencoding utf-8
 	set autowrite				" Automatically write a file when leaveing
@@ -47,6 +47,7 @@ silent! call pat`hogen#runtime_append_all_bundles()
 " ------------
 "    Vim UI
 " ------------
+	let g:solarized_termcolors=256	"Let solarized colorscheme use 256 colors
 	colorscheme solarized	" Select the desired colorscheme
 	set tabpagemax=15		" only show 15 tabs
 	set showmode			" display the current mode
