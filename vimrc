@@ -33,16 +33,16 @@ silent! call pat`hogen#runtime_append_all_bundles()
 	set history=1000			" Store a ton of history
 
 	" ---- Directory Setup ----
-		set backup
-		set backupdir=$HOME/.vim/.vimbackup//
-		set directory=$HOME/.vim/.vimswap//
-		set viewdir=$HOME/.vim/.vimviews//
+	set backup
+	set backupdir=$HOME/.vim/.vimbackup//
+	set directory=$HOME/.vim/.vimswap//
+	set viewdir=$HOME/.vim/.vimviews//
 
-		"" Create directories if they don't exist
-		silent execute '!mkdir -p $HOME/.vim'
-		silent execute '!mkdir -p $HOME/.vim/.vimbackup'
-		silent execute '!mkdir -p $HOME/.vim/.vimswap'
-		silent execute '!mkdir -p $HOME/.vim/.vimviews'
+	"" Create directories if they don't exist
+	silent execute '!mkdir -p $HOME/.vim'
+	silent execute '!mkdir -p $HOME/.vim/.vimbackup'
+	silent execute '!mkdir -p $HOME/.vim/.vimswap'
+	silent execute '!mkdir -p $HOME/.vim/.vimviews'
 
 " ------------
 "    Vim UI
@@ -54,8 +54,8 @@ silent! call pat`hogen#runtime_append_all_bundles()
 	set showmode			" display the current mode
 
 	set cursorline			" highlight current line
-	hi cursorline guibg=#333333	" highlight bg color of current line
-	hi CursorColumn guibg=#333333	" highlight cursor
+	"hi cursorline guibg=#333333	" highlight bg color of current line
+	"hi CursorColumn guibg=#333333	" highlight cursor
 
 	if has('cmdline_info')
 		set ruler			" show the ruler
@@ -116,6 +116,16 @@ silent! call pat`hogen#runtime_append_all_bundles()
 	map <C-L> <C-W>l<C-W>_
 	map <C-H> <C-W>h<C-W>_
 	
+	" Disable arrow key to force nagivate with h,j,k,l
+	inoremap <Up>		<NOP>
+	inoremap <Down>		<NOP>
+	inoremap <Left>		<NOP>
+	inoremap <Right>	<NOP>
+	noremap  <Up>		<NOP>
+	noremap  <Down>		<NOP>
+	noremap  <Left>		<NOP>
+	noremap  <Right>	<NOP>
+
 	" Shortcuts
 	
 	" Change Working Directory to that of the current file
