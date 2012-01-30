@@ -11,7 +11,8 @@ set nocompatible
 
 " Setup Bundle Support
 runtime! autoload/pathogen.vim
-silent! call pat`hogen#runtime_append_all_bundles()
+silent! call pathogen#helptags()
+silent! call pathogen#runtime_append_all_bundles()
 
 
 " ----------------
@@ -65,7 +66,7 @@ silent! call pat`hogen#runtime_append_all_bundles()
 	endif
 
 	if has('statusline')
-		set laststatus=1	" show statusline only if there are >1 windows
+		set laststatus=2	" show statusline only if there are >1 windows
 		set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 	endif
 
