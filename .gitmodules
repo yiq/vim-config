@@ -1,3 +1,21 @@
 [submodule "3rd_parties/vim-colors-solarized"]
 	path = 3rd_parties/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "3rd_parties/vim-pathogen"]
+	path = 3rd_parties/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen.git
+[submodule "3rd_parties/vim-fugitive"]
+	path = 3rd_parties/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "3rd_parties/PIV"]
+	path = 3rd_parties/PIV
+	url = https://github.com/spf13/PIV.git
+[submodule "3rd_parties/delimitMate"]
+	path = 3rd_parties/delimitMate
+	url = https://github.com/Raimondi/delimitMate.git
+[submodule "3rd_parties/supertab"]
+	path = 3rd_parties/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "3rd_parties/nerdtree"]
+	path = 3rd_parties/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git

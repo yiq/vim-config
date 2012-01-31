@@ -11,6 +11,7 @@ set nocompatible
 
 " Setup Bundle Support
 runtime! autoload/pathogen.vim
+silent! call pathogen#infect('3rd_parties')
 silent! call pathogen#helptags()
 silent! call pathogen#runtime_append_all_bundles()
 
@@ -55,8 +56,8 @@ silent! call pathogen#runtime_append_all_bundles()
 	set showmode			" display the current mode
 
 	set cursorline			" highlight current line
-	"hi cursorline guibg=#333333	" highlight bg color of current line
-	"hi CursorColumn guibg=#333333	" highlight cursor
+	hi cursorline guibg=#333333	" highlight bg color of current line
+	hi CursorColumn guibg=#333333	" highlight cursor
 
 	if has('cmdline_info')
 		set ruler			" show the ruler
