@@ -85,7 +85,8 @@ silent! call pathogen#runtime_append_all_bundles()
 	set whichwrap=b,s,h,l,<,>,[,]	" backspace and cursor keys wrap to
 	set scrolljump=5		" lines to scroll when cursor leaves screen
 	set scrolloff=3			" minimum lines to keep above and below cursor
-	"set foldenable			" auto fold code
+	set foldenable			" auto fold code
+	set foldmethod=syntax	" syntax based code folding
 	set gdefault			" the /g flags on :s substitutions by default
 
 " -------------------------------
