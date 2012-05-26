@@ -7,9 +7,6 @@
 [submodule "3rd_parties/vim-fugitive"]
 	path = 3rd_parties/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "3rd_parties/PIV"]
-	path = 3rd_parties/PIV
-	url = https://github.com/spf13/PIV.git
 [submodule "3rd_parties/delimitMate"]
 	path = 3rd_parties/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
