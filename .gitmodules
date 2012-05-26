@@ -19,3 +19,6 @@
 [submodule "3rd_parties/nerdtree"]
 	path = 3rd_parties/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "3rd_parties/html5-syntax"]
+	path = 3rd_parties/html5-syntax
+	url = https://github.com/othree/html5-syntax.vim.git
