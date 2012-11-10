@@ -15,6 +15,9 @@ silent! call pathogen#infect('3rd_parties')
 silent! call pathogen#helptags()
 silent! call pathogen#runtime_append_all_bundles()
 
+" enable modeline
+set modeline
+
 
 " ----------------
 " General Settings
@@ -33,6 +36,8 @@ silent! call pathogen#runtime_append_all_bundles()
 	set viewoptions=folds,options,cursor,unix,slash	" better unix / windows compatibility
 	set virtualedit=onemore		" allow for cursor beyond last character
 	set history=1000			" Store a ton of history
+	
+	set ft=text					" set default filetype to plain text
 
 	" ---- Directory Setup ----
 	set backup
@@ -68,7 +73,7 @@ silent! call pathogen#runtime_append_all_bundles()
 
 	if has('statusline')
 		set laststatus=2	" show statusline only if there are >1 windows
-		set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+		set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %y\ %P
 	endif
 
 	set backspace=indent,eol,start	" backspace for dummys
@@ -133,3 +138,10 @@ silent! call pathogen#runtime_append_all_bundles()
 	
 	" Change Working Directory to that of the current file
 	cmap cwd lcd %:p:h
+
+" ---------
+" Shortcuts
+" ---------
+	abbr		#b	/****************************************************************
+	abbr		#e	*****************************************************************/
+	iab	<expr>	ds	strftime("%b %d, %Y")
