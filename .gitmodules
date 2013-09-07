@@ -19,3 +19,6 @@
 [submodule "3rd_parties/html5-syntax"]
 	path = 3rd_parties/html5-syntax
 	url = https://github.com/othree/html5-syntax.vim.git
+[submodule "3rd_parties/Vim-Plugin-for-Drupal"]
+	path = 3rd_parties/Vim-Plugin-for-Drupal
+	url = https://github.com/benjifisher/Vim-Plugin-for-Drupal.git
