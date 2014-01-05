@@ -22,3 +22,9 @@
 [submodule "3rd_parties/Vim-Plugin-for-Drupal"]
 	path = 3rd_parties/Vim-Plugin-for-Drupal
 	url = https://github.com/benjifisher/Vim-Plugin-for-Drupal.git
+[submodule "3rd_parties/vim-lucius"]
+	path = 3rd_parties/vim-lucius
+	url = https://github.com/jonathanfilip/vim-lucius
+[submodule "3rd_parties/vim-cpp-enhanced-highlight"]
+	path = 3rd_parties/vim-cpp-enhanced-highlight
+	url = https://github.com/octol/vim-cpp-enhanced-highlight
