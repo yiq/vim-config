@@ -145,3 +145,8 @@ set modeline
 	abbr		#b	/****************************************************************
 	abbr		#e	*****************************************************************/
 	iab	<expr>	ds	strftime("%b %d, %Y")
+
+" -----------
+" Programming
+" -----------
+	let Tlist_Ctags_Cmd="/opt/ctags-5.8/bin/ctags" 	" Setexuberant ctags location
