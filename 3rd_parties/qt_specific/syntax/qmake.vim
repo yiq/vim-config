@@ -1,0 +1,1 @@
+../qmake-project-syntax-vim/qmake.vim
