@@ -31,3 +31,6 @@
 [submodule "3rd_parties/qt_specific/qmake-project-syntax-vim"]
 	path = 3rd_parties/qt_specific/qmake-project-syntax-vim
 	url = https://git.gitorious.org/qmake-project-syntax-vim/mainline.git
+[submodule "3rd_parties/vim-texlog"]
+	path = 3rd_parties/vim-texlog
+	url = git://github.com/glts/vim-texlog.git
