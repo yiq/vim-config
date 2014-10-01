@@ -54,9 +54,10 @@ set modeline
 " ------------
 "    Vim UI
 " ------------
-	let g:solarized_termcolors=256	"Let solarized colorscheme use 256 colors
-	let g:solarized_termtrans = 1
-	colorscheme solarized	" Select the desired colorscheme
+	"let g:solarized_termcolors=256	"Let solarized colorscheme use 256 colors
+	"let g:solarized_termtrans = 1
+	"colorscheme solarized	" Select the desired colorscheme
+	colorscheme hybrid
 	set tabpagemax=15		" only show 15 tabs
 	set showmode			" display the current mode
 

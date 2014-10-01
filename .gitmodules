@@ -25,3 +25,6 @@
 [submodule "3rd_parties/vim-texlog"]
 	path = 3rd_parties/vim-texlog
 	url = git://github.com/glts/vim-texlog.git
+[submodule "3rd_parties/vim-hybrid"]
+	path = 3rd_parties/vim-hybrid
+	url = https://github.com/w0ng/vim-hybrid
