@@ -98,9 +98,8 @@ set modeline
 " -------------------------------
 "  MacVim specific look and feel
 " -------------------------------
-	set guifont=TerminusBold:h16	" Set the display font
+	set guifont=ProggyClean:h11		" Set the display font
 	set noantialias					" Disable the anti-aliasing rendering
-	"set guifont=Consolas:h16
 
 
 " ------------
