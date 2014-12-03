@@ -28,3 +28,12 @@
 [submodule "3rd_parties/vim-hybrid"]
 	path = 3rd_parties/vim-hybrid
 	url = https://github.com/w0ng/vim-hybrid
+[submodule "3rd_parties/vim-plugin-viewdoc"]
+	path = 3rd_parties/vim-plugin-viewdoc
+	url = https://github.com/powerman/vim-plugin-viewdoc
+[submodule "3rd_parties/dbext"]
+	path = 3rd_parties/dbext
+	url = https://github.com/vim-scripts/dbext.vim
+[submodule "3rd_parties/taskpaper"]
+	path = 3rd_parties/taskpaper
+	url = https://github.com/davidoc/taskpaper.vim
