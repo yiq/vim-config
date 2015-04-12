@@ -37,3 +37,6 @@
 [submodule "3rd_parties/taskpaper"]
 	path = 3rd_parties/taskpaper
 	url = https://github.com/davidoc/taskpaper.vim
+[submodule "3rd_parties/Dockerfile"]
+	path = 3rd_parties/Dockerfile
+	url = https://github.com/ekalinin/Dockerfile.vim.git
