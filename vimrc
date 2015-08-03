@@ -109,10 +109,11 @@ set modeline
 	set autoindent			" indent at the same level of the previous line
 	set smartindent
 	set shiftwidth=4		" use indents of 4 spaces
-	set noexpandtab			" tabs are tabs, not spaces
+	set expandtab			" tabs are tabs, not spaces
 	set tabstop=4			" an indentation every four columns
 	set pastetoggle=<F12>			" pastetoggle (sane indentation on pastes)
 	set comments=sl:/*,mb:*,elx:*/	" auto format comment blocks
+	set conceallevel=0		" Don't hide json quote marks
 
 
 " ------------

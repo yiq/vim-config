@@ -1,42 +1,64 @@
 [submodule "3rd_parties/vim-colors-solarized"]
 	path = 3rd_parties/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
+    url = https://github.com/altercation/vim-colors-solarized.git
+    ignore = untracked
 [submodule "3rd_parties/vim-pathogen"]
 	path = 3rd_parties/vim-pathogen
-	url = https://github.com/tpope/vim-pathogen.git
+    url = https://github.com/tpope/vim-pathogen.git
+    ignore = untracked
 [submodule "3rd_parties/vim-fugitive"]
 	path = 3rd_parties/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive.git
+    url = https://github.com/tpope/vim-fugitive.git
+    ignore = untracked
 [submodule "3rd_parties/delimitMate"]
 	path = 3rd_parties/delimitMate
-	url = https://github.com/Raimondi/delimitMate.git
+    url = https://github.com/Raimondi/delimitMate.git
+    ignore = untracked
 [submodule "3rd_parties/supertab"]
 	path = 3rd_parties/supertab
-	url = https://github.com/ervandew/supertab.git
+    url = https://github.com/ervandew/supertab.git
+    ignore = untracked
 [submodule "3rd_parties/nerdtree"]
 	path = 3rd_parties/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
+    url = https://github.com/scrooloose/nerdtree.git
+    ignore = untracked
 [submodule "3rd_parties/html5-syntax"]
 	path = 3rd_parties/html5-syntax
-	url = https://github.com/othree/html5-syntax.vim.git
+    url = https://github.com/othree/html5-syntax.vim.git
+    ignore = untracked
 [submodule "3rd_parties/vim-cpp-enhanced-highlight"]
 	path = 3rd_parties/vim-cpp-enhanced-highlight
-	url = https://github.com/octol/vim-cpp-enhanced-highlight
+    url = https://github.com/octol/vim-cpp-enhanced-highlight
+    ignore = untracked
 [submodule "3rd_parties/vim-texlog"]
 	path = 3rd_parties/vim-texlog
-	url = git://github.com/glts/vim-texlog.git
+    url = git://github.com/glts/vim-texlog.git
+    ignore = untracked
 [submodule "3rd_parties/vim-hybrid"]
 	path = 3rd_parties/vim-hybrid
-	url = https://github.com/w0ng/vim-hybrid
+    url = https://github.com/w0ng/vim-hybrid
+    ignore = untracked
 [submodule "3rd_parties/vim-plugin-viewdoc"]
 	path = 3rd_parties/vim-plugin-viewdoc
-	url = https://github.com/powerman/vim-plugin-viewdoc
+    url = https://github.com/powerman/vim-plugin-viewdoc
+    ignore = untracked
 [submodule "3rd_parties/dbext"]
 	path = 3rd_parties/dbext
-	url = https://github.com/vim-scripts/dbext.vim
+    url = https://github.com/vim-scripts/dbext.vim
+    ignore = untracked
 [submodule "3rd_parties/taskpaper"]
 	path = 3rd_parties/taskpaper
-	url = https://github.com/davidoc/taskpaper.vim
+    url = https://github.com/davidoc/taskpaper.vim
+    ignore = untracked
 [submodule "3rd_parties/Dockerfile"]
 	path = 3rd_parties/Dockerfile
-	url = https://github.com/ekalinin/Dockerfile.vim.git
+    url = https://github.com/ekalinin/Dockerfile.vim.git
+    ignore = untracked
+[submodule "3rd_parties/vim-json"]
+	path = 3rd_parties/vim-json
+    url = https://github.com/elzr/vim-json
+    ignore = untracked
+[submodule "3rd_parties/vim-go"]
+	path = 3rd_parties/vim-go
+    url = https://github.com/fatih/vim-go.git
+    ignore = untracked
