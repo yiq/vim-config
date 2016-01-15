@@ -62,3 +62,12 @@
 	path = 3rd_parties/vim-go
     url = https://github.com/fatih/vim-go.git
     ignore = untracked
+[submodule "3rd_parties/SimpylFold"]
+	path = 3rd_parties/SimpylFold
+	url = https://github.com/tmhedberg/SimpylFold
+[submodule "3rd_parties/vim-elixir"]
+	path = 3rd_parties/vim-elixir
+	url = https://github.com/elixir-lang/vim-elixir.git
+[submodule "3rd_parties/vim-jinja"]
+	path = 3rd_parties/vim-jinja
+	url = https://github.com/lepture/vim-jinja

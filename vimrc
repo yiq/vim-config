@@ -98,8 +98,9 @@ set modeline
 " -------------------------------
 "  MacVim specific look and feel
 " -------------------------------
-	set guifont=ProggyCleanTT:h16	" Set the display font
-	set noantialias					" Disable the anti-aliasing rendering
+	set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h14	" Set the display font
+	"set noantialias				    	" Disable the anti-aliasing rendering
+    let g:airline_powerline_fonts = 1
 
 
 " ------------
@@ -136,6 +137,7 @@ set modeline
 	noremap  <Right>	<NOP>
 
 	" Shortcuts
+    silent! map <F5> :NERDTreeToggle<CR>
 	
 	" Change Working Directory to that of the current file
 	cmap cwd lcd %:p:h
