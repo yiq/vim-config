@@ -74,3 +74,6 @@
 [submodule "3rd_parties/vim-airline"]
 	path = 3rd_parties/vim-airline
 	url = https://github.com/vim-airline/vim-airline
+[submodule "3rd_parties/vim-javascript"]
+	path = 3rd_parties/vim-javascript
+	url = https://github.com/pangloss/vim-javascript
