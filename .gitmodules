@@ -77,3 +77,7 @@
 [submodule "3rd_parties/vim-javascript"]
 	path = 3rd_parties/vim-javascript
 	url = https://github.com/pangloss/vim-javascript
+[submodule "3rd_parties/vim-taskwarrior"]
+	path = 3rd_parties/vim-taskwarrior
+    url = https://github.com/blindFS/vim-taskwarrior
+    ignore=untracked
