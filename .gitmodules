@@ -38,10 +38,6 @@
 	path = 3rd_parties/vim-plugin-viewdoc
     url = https://github.com/powerman/vim-plugin-viewdoc
     ignore = untracked
-[submodule "3rd_parties/dbext"]
-	path = 3rd_parties/dbext
-    url = https://github.com/vim-scripts/dbext.vim
-    ignore = untracked
 [submodule "3rd_parties/taskpaper"]
 	path = 3rd_parties/taskpaper
     url = https://github.com/davidoc/taskpaper.vim
