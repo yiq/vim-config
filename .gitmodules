@@ -72,3 +72,9 @@
 [submodule "3rd_parties/html5"]
 	path = 3rd_parties/html5
 	url = https://github.com/othree/html5.vim
+[submodule "3rd_parties/vim-indent-guides"]
+	path = 3rd_parties/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides
+[submodule "3rd_parties/syntastic"]
+	path = 3rd_parties/syntastic
+	url = https://github.com/scrooloose/syntastic
