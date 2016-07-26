@@ -78,3 +78,10 @@
 [submodule "3rd_parties/syntastic"]
 	path = 3rd_parties/syntastic
 	url = https://github.com/scrooloose/syntastic
+[submodule "3rd_parties/vim-unimpaired"]
+	path = 3rd_parties/vim-unimpaired
+	url = http://github.com/tpope/vim-unimpaired
+[submodule "3rd_parties/vim-cmake"]
+	path = 3rd_parties/vim-cmake
+    url = https://github.com/vhdirk/vim-cmake
+    ignore = untracked
