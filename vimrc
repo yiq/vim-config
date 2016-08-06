@@ -100,9 +100,9 @@ set modeline
 " -------------------------------
 "  MacVim specific look and feel
 " -------------------------------
-    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h14  " Set the display font
+    set guifont=ProggyCleanTT:h16  " Set the display font
     "set noantialias                        " Disable the anti-aliasing rendering
-    let g:airline_powerline_fonts = 1
+    let g:airline_powerline_fonts = 0
 
 
 " ------------
@@ -190,3 +190,7 @@ set modeline
     let g:syntastic_auto_loc_list = 1
     let g:syntastic_check_on_open = 1
     let g:syntastic_check_on_wq = 0
+
+    let g:syntastic_cpp_compiler = 'clang++'
+    let g:syntastic_cpp_compiler_options = "-std=c++14"
+    let g:syntastic_cpp_include_dirs = ["/opt/includes"]
