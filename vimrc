@@ -194,3 +194,6 @@ set modeline
     let g:syntastic_cpp_compiler = 'clang++'
     let g:syntastic_cpp_compiler_options = "-std=c++14"
     let g:syntastic_cpp_include_dirs = ["/opt/includes"]
+
+    " NERDtree
+    let NERDTreeIgnore = ['\.git$', '_build', 'deps', 'mix.lock']
