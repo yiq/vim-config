@@ -85,3 +85,6 @@
 	path = 3rd_parties/vim-cmake
     url = https://github.com/vhdirk/vim-cmake
     ignore = untracked
+[submodule "3rd_parties/vim-gitgutter"]
+	path = 3rd_parties/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
