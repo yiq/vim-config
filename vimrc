@@ -199,3 +199,6 @@ set modeline
     " indent-guide
     let g:indent_guides_start_level=2
     let g:indent_guides_guide_size=2
+    
+    " NERDtree
+    let NERDTreeIgnore = ['\.git$', '_build', 'deps', 'mix.lock']
