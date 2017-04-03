@@ -195,5 +195,8 @@ set modeline
     let g:syntastic_cpp_compiler_options = "-std=c++14"
     let g:syntastic_cpp_include_dirs = ["/opt/includes"]
 
+    let g:syntastic_html_tidy_ignore_errors = ['proprietary attribute "ng-', 'proprietary attribute "ui-']
+    let g:syntastic_html_tidy_blocklevel_tags = ['ui-view']
+
     " NERDtree
-    let NERDTreeIgnore = ['\.git$', '_build', 'deps', 'mix.lock']
+    let NERDTreeIgnore = ['\.git$', '_build', 'deps', 'mix.lock', 'node_modules']

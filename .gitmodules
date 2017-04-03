@@ -85,3 +85,6 @@
 	path = 3rd_parties/vim-cmake
     url = https://github.com/vhdirk/vim-cmake
     ignore = untracked
+[submodule "3rd_parties/vim-terraform"]
+	path = 3rd_parties/vim-terraform
+	url = https://github.com/hashivim/vim-terraform
