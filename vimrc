@@ -28,6 +28,7 @@ set modeline
     set term=xterm
     filetype plugin indent on   " Automatically detect file types
     set t_Co=256                " Enable 256 colors
+    set t_ut=                   " disable Background Color Erase"
     set mouse=a                 " Enable xterm mouse support
     scriptencoding utf-8
     set autowrite               " Automatically write a file when leaveing
@@ -198,5 +199,9 @@ set modeline
     let g:syntastic_html_tidy_ignore_errors = ['proprietary attribute "ng-', 'proprietary attribute "ui-']
     let g:syntastic_html_tidy_blocklevel_tags = ['ui-view']
 
+    " indent-guide
+    let g:indent_guides_start_level=2
+    let g:indent_guides_guide_size=2
+    
     " NERDtree
     let NERDTreeIgnore = ['\.git$', '_build', 'deps', 'mix.lock', 'node_modules']

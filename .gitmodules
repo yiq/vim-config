@@ -65,10 +65,6 @@
 [submodule "3rd_parties/vim-javascript"]
 	path = 3rd_parties/vim-javascript
 	url = https://github.com/pangloss/vim-javascript
-[submodule "3rd_parties/vim-taskwarrior"]
-	path = 3rd_parties/vim-taskwarrior
-    url = https://github.com/blindFS/vim-taskwarrior
-    ignore=untracked
 [submodule "3rd_parties/html5"]
 	path = 3rd_parties/html5
 	url = https://github.com/othree/html5.vim
@@ -88,3 +84,6 @@
 [submodule "3rd_parties/vim-terraform"]
 	path = 3rd_parties/vim-terraform
 	url = https://github.com/hashivim/vim-terraform
+[submodule "3rd_parties/vim-gitgutter"]
+	path = 3rd_parties/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
