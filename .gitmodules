@@ -56,9 +56,6 @@
 [submodule "3rd_parties/vim-elixir"]
 	path = 3rd_parties/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
-[submodule "3rd_parties/vim-jinja"]
-	path = 3rd_parties/vim-jinja
-	url = https://github.com/lepture/vim-jinja
 [submodule "3rd_parties/vim-airline"]
 	path = 3rd_parties/vim-airline
 	url = https://github.com/vim-airline/vim-airline
