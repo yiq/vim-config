@@ -201,4 +201,6 @@ set modeline
     let g:indent_guides_guide_size=2
     
     " NERDtree
+    let g:NERDTreeDirArrowExpandable="+"
+    let g:NERDTreeDirArrowCollapsible="~"
     let NERDTreeIgnore = ['\.git$', '_build', 'deps', 'mix.lock']
