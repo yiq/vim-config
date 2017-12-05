@@ -196,6 +196,9 @@ set modeline
     let g:syntastic_cpp_compiler_options = "-std=c++14"
     let g:syntastic_cpp_include_dirs = ["/opt/includes"]
 
+    let g:syntastic_html_tidy_ignore_errors = ['proprietary attribute "ng-', 'proprietary attribute "ui-']
+    let g:syntastic_html_tidy_blocklevel_tags = ['ui-view']
+
     " indent-guide
     let g:indent_guides_start_level=2
     let g:indent_guides_guide_size=2
@@ -203,4 +206,4 @@ set modeline
     " NERDtree
     let g:NERDTreeDirArrowExpandable="+"
     let g:NERDTreeDirArrowCollapsible="~"
-    let NERDTreeIgnore = ['\.git$', '_build', 'deps', 'mix.lock']
+    let NERDTreeIgnore = ['\.git$', '_build', 'deps', 'mix.lock', 'node_modules']
