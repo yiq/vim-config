@@ -11,7 +11,7 @@ set nocompatible
 
 " Setup Bundle Support
 runtime! autoload/pathogen.vim
-silent! call pathogen#infect('3rd_parties')
+silent! call pathogen#infect('3rd_parties/{}')
 silent! call pathogen#helptags()
 silent! call pathogen#runtime_append_all_bundles()
 
