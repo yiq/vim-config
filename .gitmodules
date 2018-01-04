@@ -84,3 +84,6 @@
 [submodule "3rd_parties/vim-gitgutter"]
 	path = 3rd_parties/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
+[submodule "3rd_parties/vim-vue"]
+	path = 3rd_parties/vim-vue
+	url = https://github.com/posva/vim-vue
