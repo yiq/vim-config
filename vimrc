@@ -11,7 +11,7 @@ set nocompatible
 
 " Setup Bundle Support
 runtime! autoload/pathogen.vim
-silent! call pathogen#infect('3rd_parties')
+silent! call pathogen#infect('3rd_parties/{}')
 silent! call pathogen#helptags()
 silent! call pathogen#runtime_append_all_bundles()
 
@@ -208,6 +208,8 @@ set modeline
     let g:indent_guides_guide_size=2
     
     " NERDtree
+    let g:NERDTreeDirArrowExpandable="+"
+    let g:NERDTreeDirArrowCollapsible="~"
     let NERDTreeIgnore = ['\.git$', '_build', 'deps', 'mix.lock', 'node_modules']
 
 
