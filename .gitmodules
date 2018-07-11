@@ -87,3 +87,12 @@
 [submodule "3rd_parties/vim-gitgutter"]
 	path = 3rd_parties/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
+[submodule "3rd_parties/vim-lldb"]
+	path = 3rd_parties/vim-lldb
+	url = https://github.com/gilligan/vim-lldb
+[submodule "3rd_parties/tagbar"]
+	path = 3rd_parties/tagbar
+	url = https://github.com/majutsushi/tagbar
+[submodule "3rd_parties/elm-vim"]
+	path = 3rd_parties/elm-vim
+	url = https://github.com/elmcast/elm-vim

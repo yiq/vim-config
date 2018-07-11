@@ -39,6 +39,7 @@ set modeline
     set history=1000            " Store a ton of history
 
     set ft=text                 " set default filetype to plain text
+    set exrc                    " enable per-project vimrc
 
     " ---- Directory Setup ----
     set backup
@@ -194,10 +195,13 @@ set modeline
 
     let g:syntastic_cpp_compiler = 'clang++'
     let g:syntastic_cpp_compiler_options = "-std=c++14"
-    let g:syntastic_cpp_include_dirs = ["/opt/includes"]
 
-    let g:syntastic_html_tidy_ignore_errors = ['proprietary attribute "ng-', 'proprietary attribute "ui-']
-    let g:syntastic_html_tidy_blocklevel_tags = ['ui-view']
+    let g:syntastic_html_tidy_ignore_errors = [
+                \ 'proprietary attribute "ng-', 
+                \ 'proprietary attribute "ui-', 
+                \ 'proprietary attribute "integrity"', 
+                \ 'proprietary attribute "crossorigin"']
+    let g:syntastic_html_tidy_blocklevel_tags = ['ui-view', 'ng-view']
 
     " indent-guide
     let g:indent_guides_start_level=2
@@ -205,3 +209,9 @@ set modeline
     
     " NERDtree
     let NERDTreeIgnore = ['\.git$', '_build', 'deps', 'mix.lock', 'node_modules']
+
+
+" ---------
+"  Epilogue
+" ---------
+set secure
