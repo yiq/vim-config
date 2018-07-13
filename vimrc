@@ -56,7 +56,7 @@ set modeline
 " ------------
 "    Vim UI
 " ------------
-    colorscheme hybrid
+    colorscheme gruvbox
     set tabpagemax=15       " only show 15 tabs
     set showmode            " display the current mode
 
@@ -195,6 +195,7 @@ set modeline
 
     let g:syntastic_cpp_compiler = 'clang++'
     let g:syntastic_cpp_compiler_options = "-std=c++14"
+    let g:syntastic_cpp_config_file = ".syntastic_cpp_config"
 
     let g:syntastic_html_tidy_ignore_errors = [
                 \ 'proprietary attribute "ng-', 
@@ -211,6 +212,9 @@ set modeline
     let g:NERDTreeDirArrowExpandable="+"
     let g:NERDTreeDirArrowCollapsible="~"
     let NERDTreeIgnore = ['\.git$', '_build', 'deps', 'mix.lock', 'node_modules']
+
+    " vim-go
+    let g:go_version_warning = 0
 
 
 " ---------
