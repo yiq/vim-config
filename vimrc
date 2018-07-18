@@ -171,6 +171,9 @@ set modeline
 " --------------------------
 "  Plugin Specific Settings
 " --------------------------
+    " ctrl-p
+    let g:ctrlp_custom_ignore = 'node_modules'
+
     " vim-javascript
     let g:javascript_conceal_function       = "ƒ"
     let g:javascript_conceal_null           = "ø"

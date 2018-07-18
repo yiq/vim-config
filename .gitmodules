@@ -99,3 +99,6 @@
 [submodule "3rd_parties/gruvbox"]
 	path = 3rd_parties/gruvbox
 	url = https://github.com/morhetz/gruvbox
+[submodule "3rd_parties/ctrlp"]
+	path = 3rd_parties/ctrlp
+	url = https://github.com/kien/ctrlp.vim
