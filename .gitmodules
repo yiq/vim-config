@@ -102,3 +102,6 @@
 [submodule "3rd_parties/ctrlp"]
 	path = 3rd_parties/ctrlp
 	url = https://github.com/kien/ctrlp.vim
+[submodule "3rd_parties/systemverilog.vim"]
+	path = 3rd_parties/systemverilog.vim
+	url = https://github.com/nachumk/systemverilog.vim

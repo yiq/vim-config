@@ -11,7 +11,7 @@ set nocompatible
 
 " Setup Bundle Support
 runtime! autoload/pathogen.vim
-silent! call pathogen#infect('3rd_parties/{}')
+silent! call pathogen#infect('3rd_parties-enabled/{}')
 silent! call pathogen#helptags()
 silent! call pathogen#runtime_append_all_bundles()
 
@@ -102,7 +102,8 @@ set modeline
 " -------------------------------
 "  MacVim specific look and feel
 " -------------------------------
-    set guifont=ProggyCleanTT:h16  " Set the display font
+    set guifont=ProggySquareTT\ for\ Powerline\ 12  " Set the display font
+    set guioptions=aegit
     "set noantialias                        " Disable the anti-aliasing rendering
     let g:airline_powerline_fonts = 0
 
