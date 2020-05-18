@@ -105,3 +105,18 @@
 [submodule "3rd_parties/systemverilog.vim"]
 	path = 3rd_parties/systemverilog.vim
 	url = https://github.com/nachumk/systemverilog.vim
+[submodule "3rd_parties/papercolor-theme"]
+	path = 3rd_parties/papercolor-theme
+	url = https://github.com/NLKNguyen/papercolor-theme
+[submodule "3rd_parties/vim-airline-themes"]
+	path = 3rd_parties/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "3rd_parties/summerfruit256.vim"]
+	path = 3rd_parties/summerfruit256.vim
+	url = https://github.com/vim-scripts/summerfruit256.vim
+[submodule "3rd_parties/AutumnLeaf"]
+	path = 3rd_parties/AutumnLeaf
+	url = https://github.com/vim-scripts/AutumnLeaf
+[submodule "3rd_parties/vim-yaml"]
+	path = 3rd_parties/vim-yaml
+	url = https://github.com/stephpy/vim-yaml

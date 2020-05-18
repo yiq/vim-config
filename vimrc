@@ -24,7 +24,7 @@ set modeline
 " ----------------
 
     syntax on                   " Turn on syntax highlighting
-    set background=dark         " Assume a dark background
+    set background=light        " Assume a dark background
     set term=xterm
     filetype plugin indent on   " Automatically detect file types
     set t_Co=256                " Enable 256 colors
@@ -56,17 +56,17 @@ set modeline
 " ------------
 "    Vim UI
 " ------------
-    colorscheme gruvbox
+    colorscheme PaperColor
     set tabpagemax=15       " only show 15 tabs
     set showmode            " display the current mode
 
     set cursorline          " highlight current line
 
     " highlight bg color of current line
-    hi cursorline guibg=#333333
+    hi cursorline guibg=#cccccc
 
     " highlight cursor
-    hi CursorColumn guibg=#333333
+    hi CursorColumn guibg=#cccccc
 
     if has('cmdline_info')
         set ruler           " show the ruler
@@ -102,10 +102,11 @@ set modeline
 " -------------------------------
 "  MacVim specific look and feel
 " -------------------------------
-    set guifont=ProggySquareTT\ for\ Powerline\ 12  " Set the display font
+    set guifont=Share\ Tech\ Mono\ Bold\ 11     " Set the display font
     set guioptions=aegit
     "set noantialias                        " Disable the anti-aliasing rendering
     let g:airline_powerline_fonts = 0
+
 
 
 " ------------
@@ -149,6 +150,7 @@ set modeline
 
     " Shortcut to rapidly toggle `set list`
     nmap        <leader>l   :set list!<CR>
+    nmap        <leader>bg  :let &background = ( &background == "dark" ? "light" : "dark" ) <CR>
 
     " Shortcuts
     silent! map <F5>        :NERDTreeToggle<CR>
@@ -159,8 +161,8 @@ set modeline
 " ---------
 " Shortcuts
 " ---------
-    abbr        #b  /****************************************************************
-    abbr        #e  *****************************************************************/
+    abbr        *b  /****************************************************************
+    abbr        *e  *****************************************************************/
     iab <expr>  ds  strftime("%b %d, %Y")
 
 " -----------
@@ -209,8 +211,9 @@ set modeline
     let g:syntastic_html_tidy_blocklevel_tags = ['ui-view', 'ng-view']
 
     " indent-guide
-    let g:indent_guides_start_level=2
-    let g:indent_guides_guide_size=2
+    let g:indent_guides_enable_on_vim_startup = 1
+    let g:indent_guides_start_level = 2
+    let g:indent_guides_guide_size = 1
     
     " NERDtree
     let g:NERDTreeDirArrowExpandable="+"
