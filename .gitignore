@@ -3,3 +3,11 @@ doc/tags
 .vimbackup
 .DS_Store
 .vimswap
+3rd_parties-enabled/*
+
+!3rd_parties-enabled/.keep
+!3rd_parties-enabled/gruvbox
+!3rd_parties-enabled/papercolor-theme
+!3rd_parties-enabled/syntastic
+!3rd_parties-enabled/vim-fugitive
+

@@ -15,6 +15,17 @@ silent! call pathogen#infect('3rd_parties-enabled/{}')
 silent! call pathogen#helptags()
 silent! call pathogen#runtime_append_all_bundles()
 
+" dark / light theme helper
+function LightTheme()
+    set background=light
+    colorscheme PaperColor
+endfunction
+
+function DarkTheme()
+    set background=dark
+    colorscheme gruvbox
+endfunction
+
 " enable modeline
 set modeline
 
@@ -24,11 +35,18 @@ set modeline
 " ----------------
 
     syntax on                   " Turn on syntax highlighting
-    set background=light        " Assume a dark background
+    
+    " set background based on time
+    if strftime('%H') < 8 || strftime('%H') > 18
+        call DarkTheme()
+    else
+        call LightTheme()
+    endif
+
     set term=xterm
     filetype plugin indent on   " Automatically detect file types
     set t_Co=256                " Enable 256 colors
-    set t_ut=                   " disable Background Color Erase"
+    set t_ut=                   " disable Background Color Erase
     set mouse=a                 " Enable xterm mouse support
     scriptencoding utf-8
     set autowrite               " Automatically write a file when leaveing
@@ -68,11 +86,13 @@ set modeline
     " highlight cursor
     hi CursorColumn guibg=#cccccc
 
+    " color column 80 and 120+
+    let &colorcolumn="80,".join(range(120, 200), ',')
+
     if has('cmdline_info')
         set ruler           " show the ruler
         set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%) " a ruler on steroid
         set showcmd         " show partial commands in status line and
-                            " selected characters/lines in visual mode
     endif
 
     if has('statusline')
@@ -81,7 +101,7 @@ set modeline
     endif
 
     set backspace=indent,eol,start  " backspace for dummys
-    set linespace=0                 " No extra spaces between rows
+    set linespace=2                 " spaces between rows
     set nu                          " Line numbers on
     set showmatch                   " show matching brackets/parenthesis
     set incsearch                   " find as you type search
@@ -148,9 +168,19 @@ set modeline
     noremap     <Left>      <NOP>
     noremap     <Right>     <NOP>
 
+    function ToggleTheme()
+        if(&background == "dark")
+            call LightTheme()
+        else
+            call DarkTheme()
+        endif
+    endfunction
+
+
     " Shortcut to rapidly toggle `set list`
     nmap        <leader>l   :set list!<CR>
-    nmap        <leader>bg  :let &background = ( &background == "dark" ? "light" : "dark" ) <CR>
+    "nmap        <leader>bg  :let &background = ( &background == "dark" ? "light" : "dark" ) <CR>
+    nmap        <leader>bg  :call ToggleTheme()<CR>
 
     " Shortcuts
     silent! map <F5>        :NERDTreeToggle<CR>
