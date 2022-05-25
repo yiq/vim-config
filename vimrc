@@ -83,12 +83,6 @@ set modeline
 
     set cursorline          " highlight current line
 
-    " highlight bg color of current line
-    hi cursorline guibg=#cccccc
-
-    " highlight cursor
-    hi CursorColumn guibg=#cccccc
-
     " color column 80 and 120+
     let &colorcolumn="80,".join(range(120, 200), ',')
 
@@ -125,7 +119,7 @@ set modeline
 " -------------------------------
 "  MacVim specific look and feel
 " -------------------------------
-    set guifont=Share\ Tech\ Mono\ Bold\ 11     " Set the display font
+    set guifont=Cascadia\ Mono\ PL\ Regular\ 11     " Set the display font
     set guioptions=aegit
     "set noantialias                        " Disable the anti-aliasing rendering
     let g:airline_powerline_fonts = 0
