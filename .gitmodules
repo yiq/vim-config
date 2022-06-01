@@ -24,7 +24,7 @@
     ignore = untracked
 [submodule "3rd_parties/vim-texlog"]
 	path = 3rd_parties/vim-texlog
-    url = git://github.com/glts/vim-texlog.git
+	url = https://github.com/glts/vim-texlog.git
     ignore = untracked
 [submodule "3rd_parties/vim-hybrid"]
 	path = 3rd_parties/vim-hybrid

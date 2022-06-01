@@ -19,11 +19,15 @@ silent! call pathogen#runtime_append_all_bundles()
 function LightTheme()
     set background=light
     colorscheme PaperColor
+    syntax off
+    syntax on
 endfunction
 
 function DarkTheme()
     set background=dark
     colorscheme gruvbox
+    syntax off
+    syntax on
 endfunction
 
 " enable modeline
@@ -36,13 +40,6 @@ set modeline
 
     syntax on                   " Turn on syntax highlighting
     
-    " set background based on time
-    if strftime('%H') < 8 || strftime('%H') > 18
-        call DarkTheme()
-    else
-        call LightTheme()
-    endif
-
     set term=xterm
     filetype plugin indent on   " Automatically detect file types
     set t_Co=256                " Enable 256 colors
@@ -74,17 +71,17 @@ set modeline
 " ------------
 "    Vim UI
 " ------------
-    colorscheme PaperColor
+    " set background based on time
+    if strftime('%H') < 8 || strftime('%H') > 18
+        call DarkTheme()
+    else
+        call LightTheme()
+    endif
+
     set tabpagemax=15       " only show 15 tabs
     set showmode            " display the current mode
 
     set cursorline          " highlight current line
-
-    " highlight bg color of current line
-    hi cursorline guibg=#cccccc
-
-    " highlight cursor
-    hi CursorColumn guibg=#cccccc
 
     " color column 80 and 120+
     let &colorcolumn="80,".join(range(120, 200), ',')
@@ -122,8 +119,7 @@ set modeline
 " -------------------------------
 "  MacVim specific look and feel
 " -------------------------------
-    "set guifont=Share\ Tech\ Mono\ Bold\ 11     " Set the display font
-    set guifont=Cascadia\ Mono\ PL\ 10
+    set guifont=Cascadia\ Mono\ PL\ Regular\ 11     " Set the display font
     set guioptions=aegit
     "set noantialias                        " Disable the anti-aliasing rendering
     let g:airline_powerline_fonts = 0
