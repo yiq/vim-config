@@ -122,7 +122,8 @@ set modeline
 " -------------------------------
 "  MacVim specific look and feel
 " -------------------------------
-    set guifont=Share\ Tech\ Mono\ Bold\ 11     " Set the display font
+    "set guifont=Share\ Tech\ Mono\ Bold\ 11     " Set the display font
+    set guifont=Cascadia\ Mono\ PL\ 10
     set guioptions=aegit
     "set noantialias                        " Disable the anti-aliasing rendering
     let g:airline_powerline_fonts = 0
@@ -218,6 +219,9 @@ set modeline
     let g:javascript_conceal_static         = "•"
     let g:javascript_conceal_super          = "Ω"
     let g:javascript_conceal_arrow_function = "⇒"
+
+    " coc
+    "let g:coc_disable_startup_warning = 1
 
     " syntastic
     set statusline+=%#warningmsg#
