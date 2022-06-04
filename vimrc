@@ -18,16 +18,20 @@ silent! call pathogen#runtime_append_all_bundles()
 " dark / light theme helper
 function LightTheme()
     set background=light
-    colorscheme PaperColor
-    syntax off
-    syntax on
+    let ayucolor="light"
+    "colorscheme PaperColor
+    colorscheme ayu
+    "syntax off
+    "syntax on
 endfunction
 
 function DarkTheme()
     set background=dark
-    colorscheme gruvbox
-    syntax off
-    syntax on
+    let ayucolor="mirage"
+    "colorscheme gruvbox
+    colorscheme ayu
+    "syntax off
+    "syntax on
 endfunction
 
 " enable modeline
@@ -119,7 +123,7 @@ set modeline
 " -------------------------------
 "  MacVim specific look and feel
 " -------------------------------
-    set guifont=Cascadia\ Mono\ PL\ Regular\ 11     " Set the display font
+    set guifont=Cascadia\ Mono\ PL\ Regular\ 9     " Set the display font
     set guioptions=aegit
     "set noantialias                        " Disable the anti-aliasing rendering
     let g:airline_powerline_fonts = 0
