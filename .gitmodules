@@ -120,6 +120,7 @@
 [submodule "3rd_parties/vim-yaml"]
 	path = 3rd_parties/vim-yaml
 	url = https://github.com/stephpy/vim-yaml
+<<<<<<< HEAD
 [submodule "3rd_parties/vim-opencl"]
 	path = 3rd_parties/vim-opencl
 	url = https://github.com/petRUShka/vim-opencl
@@ -133,3 +134,6 @@
 	path = 3rd_parties/coc.nvim
 	url = https://github.com/neoclide/coc.nvim.git
 	branch = release
+[submodule "3rd_parties/ayu-vim"]
+	path = 3rd_parties/ayu-vim
+	url = https://github.com/ayu-theme/ayu-vim
