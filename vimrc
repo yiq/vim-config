@@ -17,8 +17,8 @@ silent! call pathogen#runtime_append_all_bundles()
 
 " dark / light theme helper
 function LightTheme()
-    set background=light
-    let ayucolor="light"
+    "set background=light
+    let g:ayucolor="light"
     "colorscheme PaperColor
     colorscheme ayu
     "syntax off
@@ -26,8 +26,8 @@ function LightTheme()
 endfunction
 
 function DarkTheme()
-    set background=dark
-    let ayucolor="mirage"
+    "set background=dark
+    let g:ayucolor="mirage"
     "colorscheme gruvbox
     colorscheme ayu
     "syntax off
@@ -45,6 +45,7 @@ set modeline
     syntax on                   " Turn on syntax highlighting
     
     set term=xterm
+    set termguicolors
     filetype plugin indent on   " Automatically detect file types
     set t_Co=256                " Enable 256 colors
     set t_ut=                   " disable Background Color Erase
