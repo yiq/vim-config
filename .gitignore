@@ -7,6 +7,7 @@ doc/tags
 
 !3rd_parties-enabled/.keep
 !3rd_parties-enabled/gruvbox
+!3rd_parties-enabled/ayu-vim
 !3rd_parties-enabled/papercolor-theme
 !3rd_parties-enabled/syntastic
 !3rd_parties-enabled/vim-fugitive
